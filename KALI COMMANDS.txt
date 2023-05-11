@@ -1,0 +1,43 @@
+Ping:ping google.com
+Ping is a command-line utility that tests the connectivity between two network devices by sending an ICMP 
+echo request message and waiting for a response. It measures the round-trip time for the message to travel 
+from the source device to the destination and back. In Kali Linux, the Ping command is used to diagnose network
+ connectivity issues and to check if a host or IP address is responding to network requests.
+
+Traceroute:traceroute google.com
+Traceroute is a command-line utility that identifies the path taken by an IP packet from the source device
+ to the destination device. It sends a series of ICMP echo request messages with increasing Time-to-Live (TTL)
+ values, which are dropped at each intermediate router until it reaches the destination device. In Kali Linux, 
+the Traceroute command is used to identify network bottlenecks and to troubleshoot network connectivity issues.
+Traceroute is a packet-tracking tool that is available for most operating systems.
+ This allows a hacker to determine how many hops a router is from the sender. 
+
+Nslookup:nslookup google.com
+Nslookup is a command-line utility that retrieves domain name system (DNS) information and resolves domain names
+ to IP addresses and vice versa. It can be used to diagnose DNS-related issues and to obtain information about a 
+domain's name servers, mail servers, and other DNS records. In Kali Linux, the Nslookup command is used to perform 
+DNS queries and to troubleshoot DNS issues.
+
+Whois:whois www.google.com
+Whois is a command-line utility that retrieves information about a domain name, such as the domain registrar,
+ contact information, and registration date. It can also be used to obtain information about IP addresses, autonomous 
+system numbers (ASNs), and network blocks. In Kali Linux, the Whois command is used to perform domain name lookups and 
+to investigate domain-related issues.
+
+Nmap:nmap google.com
+Nmap is a command-line utility that is used for network exploration and security auditing. It can scan networks, 
+identify hosts and devices, and discover open ports and services. Nmap also includes advanced features such as OS 
+detection, version detection, and vulnerability scanning. In Kali Linux, Nmap is commonly used for network 
+reconnaissance, penetration testing, and security auditing.
+
+
+
+Ping: reports the round-trip time for packets sent to and received from google.com.
+
+Traceroute: shows the path packets take from the local host to google.com, including the IP addresses of the routers along the way.
+
+Nslookup: retrieves the IP address of google.com and the corresponding domain name server.
+
+Whois: displays the registration information and ownership details of the google.com domain name.
+
+Nmap: performs a port scan on google.com to identify open ports and the associated services running on them.

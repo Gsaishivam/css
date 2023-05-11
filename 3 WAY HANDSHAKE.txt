@@ -1,0 +1,43 @@
+open wireshark
+capture filter :- Wireless Network Connection 8
+recording start
+firefox:- open    http://omayo.blogspot.com/
+close
+stop recording (top left button)
+apply display filter:-  not udp and not ssl and not arp and not snmp and not icmp
+all green part is your website
+starting 3 green part you can see: [syn]
+				   [syn ack]
+				   [ack]
+this is 3 way handshake: then next line is get webpage
+			what are we trying to ge? ==> below section
+						      click on hypertext Transfer Protocol
+						      you can see name of the website
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+three way handshake==>TCP uses a three-way handshake to establish a reliable connection. 
+		The connection is full duplex, and both sides synchronize (SYN) and acknowledge 
+		(ACK) each other. The exchange of these four flags is performed in three steps—SYN, 
+		SYN-ACK, and ACK.
+
+ Client                  Server
+          |                       |
+    SYN   |------>              SYN
+          |                       |
+    SYN-ACK<------|ACK           |
+          |                       |
+          |--------->             |
+          |        ACK            |
+          |<---------------------|
